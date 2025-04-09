@@ -4,7 +4,7 @@ const { request } = require('@playwright/test');
   const apiContext = await request.newContext();
   const baseURL = 'https://petstore.swagger.io/v2';
 
- // const username = "prebb"; //
+ // const username = "prebb";
 
   const response = await apiContext.get(`${baseURL}/user/${username}`);
 
